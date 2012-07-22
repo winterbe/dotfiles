@@ -1,7 +1,9 @@
 # Make ´nano the default editor
 export EDITOR="nano"
+
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
+
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="$ORANGE"
 
@@ -9,5 +11,13 @@ export LESS_TERMCAP_md="$ORANGE"
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
+
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+
+# Highlight matches for GREP
+export GREP_OPTIONS='--color=auto'
+
+# Colorful LS
+#export CLICOLOR=1
+#export LSCOLORS=Exfxcxdxbxegedabagacad
