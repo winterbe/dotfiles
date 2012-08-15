@@ -8,6 +8,7 @@ alias .....="cd ../../../.."
 alias p="cd ~/IdeaProjects"
 alias g="git"
 alias h="history"
+alias m="mysql -uroot"
 
 # List all files colorized in long format
 alias l="ls -l"
