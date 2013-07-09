@@ -23,3 +23,6 @@ export LANG="en_US"
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# change terminal title on ssh exit
+PS1='\[\e]1;\s\$ \W\a\e]2;\u@\h\a\]'"$PS1"
