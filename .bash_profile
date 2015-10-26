@@ -1,5 +1,5 @@
 # Load ~/.bash_prompt, ~/.exports, and ~/.aliases
-for file in ~/.{bash_prompt,exports,aliases,custom}; do
+for file in ~/Projects/dotfiles/.{bash_prompt,exports,aliases,custom}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
@@ -24,5 +24,5 @@ export LANG="en_US"
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-# change terminal title on ssh exit
+# clear terminal title on ssh exit
 PS1='\[\e]1;\s\$ \W\a\e]2;\u@\h\a\]'"$PS1"
