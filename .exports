@@ -22,8 +22,4 @@ export GREP_OPTIONS='--color=auto'
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
-
-export M2_HOME=/usr/local/maven3
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/home
-export NODE_PATH=/usr/local/lib/node_modules
-export PATH=$JAVA_HOME/bin:$M2_HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/share/npm/bin:$PATH
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"

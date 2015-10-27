@@ -1,6 +1,6 @@
-dotfiles
+Dotfiles
 ========
 
-My favorite .dotfile configuration for posix terminals (using Mac OSX).
+My .Dotfiles for Mac OSX El Capitan, inspired by http://mths.be/dotfiles
 
-It's inspired by http://mths.be/dotfiles ... Kudos, great work!
+I'm currently using the [SMYCK](http://color.smyck.org/) terminal theme.

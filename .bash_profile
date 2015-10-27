@@ -17,12 +17,10 @@ shopt -s cdspell
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
-[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
-
-
-# If possible, add tab completion for many more commands
-[ -f /etc/bash_completion ] && source /etc/bash_completion
+# Add tab completion for many more commands (use: brew install bash-completion)
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
 # clear terminal title on ssh exit
 PS1='\[\e]1;\s\$ \W\a\e]2;\u@\h\a\]'"$PS1"
