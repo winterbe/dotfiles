@@ -17,6 +17,7 @@ alias ls="command ls -G"
 alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
 
+alias fuck='sudo $(history -p \!\!)'
 alias hgrep="history | grep "
 alias myip="ipconfig getifaddr en0"
 alias speedtest='curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
