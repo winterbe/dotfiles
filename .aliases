@@ -10,7 +10,7 @@ alias g="git"
 alias h="history"
 alias m="mysql -uroot"
 alias l="ls -l"
-alias la="ls -laT"
+alias la="ls -lahT"
 alias ls="command ls -G"
 
 # Show/hide hidden files in Finder
